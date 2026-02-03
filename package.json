@@ -1,0 +1,25 @@
+{
+  "name": "practice-todo-list-yuyu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semperYuyu/practice-todo-list-yuyu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/semperYuyu/practice-todo-list-yuyu/issues"
+  },
+  "homepage": "https://github.com/semperYuyu/practice-todo-list-yuyu#readme",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
