@@ -28,3 +28,8 @@ input {
   padding: 1em;
   margin: 1em;
 }
+/* h4 is only going to be used for input items, so you wont see it in the html file */
+h4:hover {
+  background-color: rgb(255, 157, 157);
+  border-radius: 5px;
+}
