@@ -77,5 +77,3 @@ inputField.addEventListener('keydown', function(aaa) {
 submitButton.addEventListener('click', function(submittal){
   addListItem()
 })
-// creating event listener for list items to delete the item
-
