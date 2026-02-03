@@ -1,18 +1,25 @@
 var submitButton = document.querySelector('#button')
 var inputField = document.querySelector('input')
 var todoList = document.querySelector('#todoList')
+// trying something with local storage
+
+
+
 // to access text input by user, field is called 'value'
 
 // creating function to add item and give it the proper event
-function addListItem() {
-  if (inputField.value) {
+function addListItem(str) {
+  if (inputField.value || str) {
     // if value field is not empty, do following code //
   let newH4 = document.createElement('h4')
   let newCheck = document.createElement('input')
   newCheck.type = 'checkbox'
     // creating element to be added
-
-  newH4.innerHTML = `${inputField.value}`
+    if (!str) {
+      newH4.innerHTML = `${inputField.value}`
+    } else {
+      newH4.innerHTML = str
+    }
     // using input as text to be used in h4 element
 
   newH4.appendChild(newCheck)
@@ -20,6 +27,7 @@ function addListItem() {
     // allows me to reference it for event listening
 
   todoList.appendChild(newH4)
+    // trying to make each item be unique
     // adding element to page, as child of div w/ class todoList
 
   inputField.value = ""
@@ -77,3 +85,4 @@ inputField.addEventListener('keydown', function(aaa) {
 submitButton.addEventListener('click', function(submittal){
   addListItem()
 })
+
